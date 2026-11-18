@@ -1,0 +1,12 @@
+function bmi(weight, height) {
+  let calc = weight / (Math.pow(height,2));
+  if(calc <= 18.5){
+    return 'Underweight'
+  } else if (calc <= 25){
+    return 'Normal'
+  } else if (calc <= 30){
+    return 'Overweight'
+  } else {
+    return 'Obese'
+  }
+}
